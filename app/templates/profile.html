@@ -1,0 +1,35 @@
+{% extends "base.html"%}
+
+{% block main %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type = text/css href="{{ url_for('static',filename ="app.css")}}">
+</head>
+<body>
+<div id = container>
+<div id = "contents">
+<div id = "p1">
+<img src="{{ url_for('static',filename ="me.jpeg")}}" alt = "me">
+<h1>Christopher Morgan</h1>
+<p>@cmorgan</p>
+<p>Kingston,Jamaica<p>
+<p>{{date}}</p>
+</div>
+</div>
+<div id = "p2">
+<p id = "bio">I am a Jamaican male with interests in Web Development and Computer Programming. Feel free to contact me for anything!</p>
+<div id = "l">
+<p id = "bold">7 100 250 </p>
+</div>
+<div id = "r">
+<p id = "d">Posts Following Followers </p>
+</div>
+<button id= "Follow">Follow</button>
+</div>
+</div>
+</body>
+</html>
+
+{% endblock %}.
